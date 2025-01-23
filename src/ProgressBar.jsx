@@ -21,7 +21,7 @@ const ProgressBar = () => {
 
   return (
     <div className="w-full max-w-2xl p-0 sm:p-6 lg:p-8">
-      <div className="flex items-center justify-between relative mb-8">
+      <div className="flex items-center justify-between gap-[13vw] relative mb-8">
         {steps.map((step, index) => (
           <div key={step.id} className="flex flex-col items-center relative">
             <div className="relative">
@@ -60,7 +60,7 @@ const ProgressBar = () => {
               {step.id < currentStep || isComplete
                 ? 'Done'
                 : step.id === currentStep && !isComplete
-                ? 'In Progress'
+                ? 'In_Progress'
                 : 'Pending'}
             </span>
           </div>
